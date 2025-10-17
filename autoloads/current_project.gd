@@ -13,8 +13,6 @@ func set_project(new_project: Project):
 	project = new_project
 	project_changed.emit(project)
 
-# --- Methods to safely modify the project and notify listeners ---
-
 func add_track(track_type: TrackData.TrackType, instrument_scene_path: String = ""):
 	var new_track = TrackData.new()
 	new_track.track_type = track_type

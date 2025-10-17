@@ -1,25 +1,19 @@
-[gd_resource type="Resource" script_class="Project" load_steps=10 format=3]
+[gd_resource type="Resource" script_class="Project" load_steps=10 format=3 uid="uid://bt3sunyub5ecv"]
 
-[ext_resource type="Script" path="res://data/project.gd" id="1_npke6"]
-[ext_resource type="Script" path="res://data/track_data.gd" id="2_d3yrn"]
-[ext_resource type="Script" path="res://data/track_event.gd" id="3_siqpg"]
-[ext_resource type="Script" path="res://data/note_event.gd" id="4_cc575"]
-[ext_resource type="PackedScene" path="res://instruments/square/instrument.tscn" id="5_cga63"]
+[ext_resource type="Script" uid="uid://c1ayspav3jqj1" path="res://data/project.gd" id="1_npke6"]
+[ext_resource type="Script" uid="uid://ddrnkhpywdxcb" path="res://data/track_data.gd" id="2_d3yrn"]
+[ext_resource type="Script" uid="uid://bnt2ru5utjl6x" path="res://data/track_event.gd" id="3_siqpg"]
+[ext_resource type="Script" uid="uid://dicfq6p2c0f2f" path="res://data/note_event.gd" id="4_cc575"]
+[ext_resource type="PackedScene" uid="uid://g15s0sr6gc2i" path="res://instruments/square/instrument.tscn" id="5_cga63"]
 
 [sub_resource type="Resource" id="Resource_2dr0e"]
 script = ExtResource("4_cc575")
-key = 118
-start_time_sec = 1.5
 
 [sub_resource type="Resource" id="Resource_j1dd7"]
 script = ExtResource("4_cc575")
-key = 116
-start_time_sec = 0.66
 
 [sub_resource type="Resource" id="Resource_q3upj"]
 script = ExtResource("4_cc575")
-key = 110
-start_time_sec = 0.18
 
 [sub_resource type="Resource" id="Resource_b4tug"]
 script = ExtResource("2_d3yrn")

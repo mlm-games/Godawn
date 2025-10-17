@@ -1,14 +1,14 @@
 [remap]
 
 importer="svg"
-type="SVGTexture"
+type="DPITexture"
 uid="uid://cjp7c7f0yqgo0"
-path="res://.godot/imported/play_inactive.svg-7a0604a0499d6984d2b329774ab8a52e.svgtex"
+path="res://.godot/imported/play_inactive.svg-7a0604a0499d6984d2b329774ab8a52e.dpitex"
 
 [deps]
 
 source_file="res://themes/default/button_icons/play_inactive.svg"
-dest_files=["res://.godot/imported/play_inactive.svg-7a0604a0499d6984d2b329774ab8a52e.svgtex"]
+dest_files=["res://.godot/imported/play_inactive.svg-7a0604a0499d6984d2b329774ab8a52e.dpitex"]
 
 [params]
 

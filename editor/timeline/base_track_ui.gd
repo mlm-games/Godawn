@@ -34,7 +34,7 @@ var _pending_event_position: Vector2 = Vector2.ZERO
 # Preview
 var _pending_selection_ids: Array[String] = []
 
-@onready var _selection_toolbar: Control = $SelectionToolbar
+@onready var _selection_toolbar: Control = %SelectionToolbar
 
 
 @abstract func _get_event_rect(event: TrackEvent) -> Rect2
@@ -89,11 +89,11 @@ func _ready():
 
 func _on_history_changed():
 	# When undoing/redoing, the selection might become invalid.
-	var valid_selection : Array[TrackEvent] = []
+	var valid_selection: Array[TrackEvent] = []
 	for event in _selected_events:
 		if event in track_data.events:
 			valid_selection.append(event)
-	_selected_events = valid_selection 
+	_selected_events = valid_selection
 	#_update_selectio/n_display()
 	queue_redraw()
 
@@ -455,3 +455,66 @@ func set_selected_events(events: Array):
 		if event in track_data.events:
 			_selected_events.append(event)
 	queue_redraw()
+
+
+##region zoom logic
+#
+#var is_panning: bool = false
+#var is_moving: bool = false
+#var pan_start_pos: Vector2
+#var move_start_pos: Vector2
+#@onready var camera: Camera2D = %Camera2D
+#
+#func _input(event: InputEvent) -> void:
+	#if event is InputEventMouseButton:
+		#if event.button_index == MOUSE_BUTTON_LEFT:
+			#if event.is_pressed():
+				#is_panning = true
+				#pan_start_pos = event.position
+			#else:
+				#is_panning = false
+				#Color("darkgoldenrod")
+	#
+	#
+	#if event is InputEventMouseMotion:
+		##print(event)
+		#if is_panning:
+			#camera.position -= event.relative / camera.zoom
+	#
+	#if event is InputEventMagnifyGesture:
+		#_handle_zoom_at_point(event.factor, get_global_mouse_position())
+#
+	## Zooming with Mouse Wheel (to mouse position)
+	#if event is InputEventMouseButton:
+		#if event.button_index == MOUSE_BUTTON_WHEEL_UP:
+			#_handle_zoom_at_point(1.01, event.global_position)
+		#elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+			#_handle_zoom_at_point(0.99, event.global_position)
+	#
+	#if event is InputEventMagnifyGesture:
+		#_handle_zoom_at_point(event.factor, get_global_mouse_position())
+#
+#
+#func _handle_zoom_at_point(zoom_factor: float, screen_position: Vector2) -> void:
+	#var viewport_rect := get_viewport_rect()
+	#
+	## Convert screen position to viewport position
+	#var viewport_position := screen_position - viewport_rect.position
+	#
+	## Get the world position before zoom
+	#var world_pos_before := camera.get_global_transform().affine_inverse() * viewport_position
+	#
+	## Apply zoom
+	#var old_zoom := camera.zoom
+	#var new_zoom := old_zoom * zoom_factor
+	#new_zoom = new_zoom.clamp(Vector2(0.1, 0.1), Vector2(10.0, 10.0))
+	#camera.zoom = new_zoom
+	#
+	## Get the world position after zoom
+	#var world_pos_after = camera.get_global_transform().affine_inverse() * viewport_position
+	#
+	## Adjust camera position to keep the same world point under the mouse
+	#camera.position += world_pos_before - world_pos_after
+	#
+#
+##endregion

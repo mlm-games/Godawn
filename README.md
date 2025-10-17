@@ -6,7 +6,7 @@ Godawn is a free and open source [DAW](https://en.wikipedia.org/wiki/Digital_aud
 
 > (Kinda will only be available on itch and github releases until i feel it's good enough for other stores...)
 
-> Note: Godawn is only for minimal use cases, as there are some things that using gdscript cannot replicate (and do not want to use C++, have a lot of stuff that already takes a lot of my time.) If you would like help with the project or donate for my time, please feel free to. (although consider donating to GodDAW devs first for the foundation!)
+> Note: Godawn is only for minimal use cases, as there are some things that using gdscript cannot replicate (and do not want to use C++, have a lot of stuff that already takes a lot of my time.) If you would like help with the project or donate for my time, please feel free to. (although consider donating to GoDAW devs first for the foundation!)
 --
 
 Running

@@ -1,14 +1,14 @@
 [remap]
 
 importer="svg"
-type="SVGTexture"
+type="DPITexture"
 uid="uid://ck512m3jqaer"
-path="res://.godot/imported/stop_inactive.svg-271b432eb3c3c69be593e03050d3f07c.svgtex"
+path="res://.godot/imported/stop_inactive.svg-271b432eb3c3c69be593e03050d3f07c.dpitex"
 
 [deps]
 
 source_file="res://themes/default/button_icons/stop_inactive.svg"
-dest_files=["res://.godot/imported/stop_inactive.svg-271b432eb3c3c69be593e03050d3f07c.svgtex"]
+dest_files=["res://.godot/imported/stop_inactive.svg-271b432eb3c3c69be593e03050d3f07c.dpitex"]
 
 [params]
 

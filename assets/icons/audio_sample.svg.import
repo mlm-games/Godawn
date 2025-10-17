@@ -1,14 +1,14 @@
 [remap]
 
 importer="svg"
-type="SVGTexture"
+type="DPITexture"
 uid="uid://byfhxnokcvrtg"
-path="res://.godot/imported/audio_sample.svg-a88c9099d98a39b6264b1b359d2682aa.svgtex"
+path="res://.godot/imported/audio_sample.svg-a88c9099d98a39b6264b1b359d2682aa.dpitex"
 
 [deps]
 
 source_file="res://assets/icons/audio_sample.svg"
-dest_files=["res://.godot/imported/audio_sample.svg-a88c9099d98a39b6264b1b359d2682aa.svgtex"]
+dest_files=["res://.godot/imported/audio_sample.svg-a88c9099d98a39b6264b1b359d2682aa.dpitex"]
 
 [params]
 

@@ -13,3 +13,7 @@ script = ExtResource("1_audiolane")
 
 [node name="SelectionToolbar" parent="." instance=ExtResource("2_c3ibo")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 222.0
+offset_bottom = 62.0

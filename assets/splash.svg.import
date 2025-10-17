@@ -1,14 +1,14 @@
 [remap]
 
 importer="svg"
-type="SVGTexture"
+type="DPITexture"
 uid="uid://b17pf8s4mr01q"
-path="res://.godot/imported/splash.svg-fcf96d19b374602fee04c31f4db41c62.svgtex"
+path="res://.godot/imported/splash.svg-fcf96d19b374602fee04c31f4db41c62.dpitex"
 
 [deps]
 
 source_file="res://assets/splash.svg"
-dest_files=["res://.godot/imported/splash.svg-fcf96d19b374602fee04c31f4db41c62.svgtex"]
+dest_files=["res://.godot/imported/splash.svg-fcf96d19b374602fee04c31f4db41c62.dpitex"]
 
 [params]
 

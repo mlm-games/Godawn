@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlqcb3j0tlel1"]
+
+[ext_resource type="PackedScene" uid="uid://ej4236ts3fcq" path="res://editor/timeline/base_track_ui.tscn" id="1_c16ce"]
+[ext_resource type="Script" uid="uid://mh7don2isw5n" path="res://editor/timeline/piano_roll_ui.gd" id="2_ppgln"]
+
+[node name="PianoRollUIViewport" instance=ExtResource("1_c16ce")]
+script = ExtResource("2_ppgln")
